@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+    text-align: center;
+
+}
+
+.Form-container {
+    display: flex;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  background-image: linear-gradient(315deg, #6a11cb 0%, #2575fc 74%);
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.1s ease;
+}
+
+/* Efek hover — ubah gradiennya */
+button:hover {
+  background-image:  linear-gradient(to top, #c471f5 0%, #fa71cd 100%);;
+}
+
+/* Efek ketika ditekan (klik) */
+button:active {
+  transform: scale(0.96);
+  background-image: linear-gradient(to top, #c471f5 0%, #fa71cd 100%);;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    background: #fafafa;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.delete-button {
+    background: #dc3545;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background: #e60000;
+}
+
+.completed .task {
+  text-decoration: line-through;
+  color: gray;
+  opacity: 0.7;
+}
